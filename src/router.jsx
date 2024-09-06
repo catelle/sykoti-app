@@ -30,7 +30,7 @@ import Service from './views/Service/Service.jsx';
 // Define routes with distinct base paths
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '*',
     element: <GuestLayout />, // Layout for guest routes
     children: [
       {
@@ -134,10 +134,10 @@ const router = createBrowserRouter([
     ]
 
   },
-  {
-    path: '*',
-    element: <Notfoundview />, // Catch-all route for 404
-  },
+  // {
+  //   path: '*',
+  //   element: <Notfoundview />, // Catch-all route for 404
+  // },
 ]);
 
 export default router;
