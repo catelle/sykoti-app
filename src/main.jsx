@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, RouterProvider } from 'react-router-dom';
+import {  BrowserRouter, RouterProvider } from 'react-router-dom';
 import router from './router.jsx';
 import './index.css';
 import { ContextProvider } from './contexts/contentprovider.jsx';
@@ -10,10 +10,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
     <ContextProvider>
       <RouterProvider router={router} />
     </ContextProvider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
