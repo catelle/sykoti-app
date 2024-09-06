@@ -138,6 +138,13 @@ const router = createBrowserRouter([
   //   path: '*',
   //   element: <Notfoundview />, // Catch-all route for 404
   // },
-]);
+],
+
+{
+  basename: "/sykoti-app", // Replace "repository-name" with your actual repository name
+}
+
+
+);
 
 export default router;
