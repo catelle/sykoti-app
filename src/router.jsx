@@ -30,7 +30,7 @@ import Service from './views/Service/Service.jsx';
 // Define routes with distinct base paths
 const router = createBrowserRouter([
   {
-    path: '*',
+    path: '/',
     element: <GuestLayout />, // Layout for guest routes
     children: [
       {
