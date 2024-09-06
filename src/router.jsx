@@ -140,10 +140,6 @@ const router = createBrowserRouter([
   // },
 ],
 
-{
-  basename: "/sykoti-app", // Replace "repository-name" with your actual repository name
-}
-
 
 );
 
